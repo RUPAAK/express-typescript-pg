@@ -1,0 +1,18 @@
+import { DataSource } from "typeorm";
+
+export class TestHelper{
+    private static _instace: TestHelper;
+    private constructor(){}
+
+    public static get instance(): TestHelper{
+        if(!this._instace) this._instace= new TestHelper();
+        return this.instance
+    }
+
+    private dbConnect!: DataSource
+    private testDb!: any;
+
+    // async setupTestDb(){
+    //     this.testDb= new
+    // }
+}

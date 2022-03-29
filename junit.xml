@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="jest tests" tests="1" failures="1" errors="0" time="3.823">
+  <testsuite name="undefined" errors="0" failures="1" skipped="0" timestamp="2022-03-29T06:24:32" time="3.737" tests="1">
+    <testcase classname=" should " name=" should " time="0.017">
+      <failure>error: database &quot;:memory&quot; does not exist
+    at Parser.parseErrorMessage (/media/rupak/personal/typeorm_restapi/node_modules/pg-protocol/src/parser.ts:369:69)
+    at Parser.handlePacket (/media/rupak/personal/typeorm_restapi/node_modules/pg-protocol/src/parser.ts:188:21)
+    at Parser.parse (/media/rupak/personal/typeorm_restapi/node_modules/pg-protocol/src/parser.ts:103:30)
+    at Socket.&lt;anonymous&gt; (/media/rupak/personal/typeorm_restapi/node_modules/pg-protocol/src/index.ts:7:48)
+    at Socket.emit (node:events:526:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    at readableAddChunk (node:internal/streams/readable:289:9)
+    at Socket.Readable.push (node:internal/streams/readable:228:10)
+    at TCP.onStreamRead (node:internal/stream_base_commons:190:23)</failure>
+      <failure>CannotExecuteNotConnectedError: Cannot execute operation on &quot;default&quot; connection because connection is not yet established.
+    at DataSource.destroy (/media/rupak/personal/typeorm_restapi/src/data-source/DataSource.ts:282:19)
+    at Object.&lt;anonymous&gt; (/media/rupak/personal/typeorm_restapi/src/test/setup.ts:21:21)
+    at Promise.then.completed (/media/rupak/personal/typeorm_restapi/node_modules/jest-circus/build/utils.js:391:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/media/rupak/personal/typeorm_restapi/node_modules/jest-circus/build/utils.js:316:10)
+    at _callCircusHook (/media/rupak/personal/typeorm_restapi/node_modules/jest-circus/build/run.js:181:40)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at _runTest (/media/rupak/personal/typeorm_restapi/node_modules/jest-circus/build/run.js:158:5)
+    at _runTestsForDescribeBlock (/media/rupak/personal/typeorm_restapi/node_modules/jest-circus/build/run.js:66:9)
+    at run (/media/rupak/personal/typeorm_restapi/node_modules/jest-circus/build/run.js:25:3)</failure>
+    </testcase>
+  </testsuite>
+</testsuites>
